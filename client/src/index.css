@@ -1,0 +1,155 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f1115;
+  --bg-elevated: #171a21;
+  --border: #2a3140;
+  --text: #e8eaef;
+  --muted: #9aa3b5;
+  --accent: #e8a838;
+  --accent-dim: #c48a2a;
+  --danger: #e85d6f;
+  --radius: 10px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 600px at 20% -10%, #1a2233, transparent),
+    var(--bg);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.page {
+  position: relative;
+}
+
+.page-back {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, var(--accent), var(--accent-dim));
+  color: #1a1205;
+  border-color: #b37718;
+}
+
+.btn-secondary {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btn-danger {
+  background: rgba(232, 93, 111, 0.15);
+  color: #ffb3bd;
+  border-color: rgba(232, 93, 111, 0.4);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.85rem;
+}
+
+.form-ok {
+  color: #8fd19e;
+}
+
+.form-err {
+  color: #ffb3bd;
+}
+
+.price {
+  margin: 0;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.price.big {
+  font-size: 1.35rem;
+}
+
+.link-danger {
+  background: none;
+  border: none;
+  color: #ffb3bd;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.35rem;
+  font: inherit;
+  text-decoration: underline;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
